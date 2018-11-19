@@ -56,13 +56,9 @@ Route::any('/attorney_withdraw','Admin\AttorneyController@attorneyWithdraw');
 Route::any('/draft_list','Admin\DraftController@draftList');
 #评论列表
 Route::any('/comment_list','Admin\CommentController@commentList');
-<<<<<<< HEAD
 #分类添加
 Route::any('/classify_add','Admin\ClassifyController@classifyAdd');
 #分类添加
 Route::any('/classify_add_do','Admin\ClassifyController@classifyAddDo');
 #分类列表
 Route::any('/classify_list','Admin\ClassifyController@classifyList');
-=======
-
->>>>>>> 63c55a30098f4b33526929aa694e9c5a645e842c
