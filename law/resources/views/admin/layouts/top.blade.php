@@ -56,6 +56,13 @@
                         <dd><a href="comment_list">评论列表</a></dd>
                     </dl>
                 </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">分类管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="classify_add">分类添加</a></dd>
+                        <dd><a href="classify_list">分类列表</a></dd>
+                    </dl>
+                </li>
             </ul>
         </div>
     </div>
