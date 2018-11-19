@@ -20,11 +20,23 @@ Route::any('/center','Home\CenterController@center');
 #微信授权回调
 Route::any('/wx_return','Home\WxController@wx_return');
 
-#注册成为律师
+#注册成为律师页面
 Route::any('/register','Home\RegisterController@register');
 
 #律师登录页面
 Route::any('/lawyer_login','Home\RegisterController@lawyer_login');
+
+#律师接受验证码
+Route::any('/phone_code','Home\RegisterController@phone_code');
+
+#判断手机号是否被注册
+Route::any('/is_tel','Home\RegisterController@is_tel');
+
+#验证验证码是否正确
+Route::any('/verify_code','Home\RegisterController@verify_code');
+
+#律师注册 添加
+Route::any('/lawyer_add','Home\RegisterController@lawyer_add');
 
 
 
