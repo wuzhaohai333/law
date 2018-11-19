@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 #个人中心
 Route::any('/center','Home\CenterController@center');
+#微信授权回调
+Route::any('/wx_return','Home\WxController@wx_return');
