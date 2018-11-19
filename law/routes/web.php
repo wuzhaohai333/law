@@ -63,3 +63,17 @@ Route::any('/admin','Admin\AdminController@AdminLogin');
 
 #执行登录
 Route::any('/LoginDo','Admin\AdminController@LoginDo');
+#后台首页
+Route::any('/adminIndex','Admin\AdminController@AdminIndex');
+#用户列表
+Route::any('/userList','Admin\UserController@userList');
+#用户充值
+Route::any('/user_top-up','Admin\UserController@userTopUp');
+#律师列表
+Route::any('/attorney_list','Admin\AttorneyController@attorneyList');
+#律师提现记录
+Route::any('/attorney_withdraw','Admin\AttorneyController@attorneyWithdraw');
+#投稿列表
+Route::any('/draft_list','Admin\DraftController@draftList');
+#评论列表
+Route::any('/comment_list','Admin\CommentController@commentList');
