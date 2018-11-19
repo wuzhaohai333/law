@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="87c1040b-efff-402d-a916-f2a576ebda18" name="Law" url="http://180.76.162.234">
+        <fileTransfer host="180.76.162.234" port="22" privateKey="D:\Downloads\lll-k-IpRnpXg3.txt" rootFolder="/data/wwwroot/default/1804/Wechat" accessType="SFTP" username="root" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="e61a1942-a36a-4974-89d6-8a4c3aaadf62" name="/" url="http://180.76.162.234">
+        <fileTransfer host="180.76.162.234" port="22" privateKey="D:\Downloads\lll-k-IpRnpXg3.txt" accessType="SFTP" username="root" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
