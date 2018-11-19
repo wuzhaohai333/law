@@ -22,10 +22,14 @@
         "classmap": [
             "database/seeds",
             "database/factories"
+
         ],
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "app/Functions/func.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

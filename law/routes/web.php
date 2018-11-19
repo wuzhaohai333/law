@@ -10,13 +10,21 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+############################前台#######################
 Route::get('/', function () {
     return view('welcome');
 });
 #个人中心
 Route::any('/center','Home\CenterController@center');
 
+#微信授权回调
+Route::any('/wx_return','Home\WxController@wx_return');
+
+#注册成为律师
+Route::any('/register','Home\RegisterController@register');
+
+#律师登录页面
+Route::any('/lawyer_login','Home\RegisterController@lawyer_login');
 
 
 
@@ -25,44 +33,15 @@ Route::any('/center','Home\CenterController@center');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+########################后台###########################
 #登录视图
 Route::any('/admin','Admin\AdminController@AdminLogin');
 
 #执行登录
 Route::any('/LoginDo','Admin\AdminController@LoginDo');
+
+
+
 #后台首页
 Route::any('/adminIndex','Admin\AdminController@AdminIndex');
 #用户列表
@@ -77,9 +56,13 @@ Route::any('/attorney_withdraw','Admin\AttorneyController@attorneyWithdraw');
 Route::any('/draft_list','Admin\DraftController@draftList');
 #评论列表
 Route::any('/comment_list','Admin\CommentController@commentList');
+<<<<<<< HEAD
 #分类添加
 Route::any('/classify_add','Admin\ClassifyController@classifyAdd');
 #分类添加
 Route::any('/classify_add_do','Admin\ClassifyController@classifyAddDo');
 #分类列表
 Route::any('/classify_list','Admin\ClassifyController@classifyList');
+=======
+
+>>>>>>> 63c55a30098f4b33526929aa694e9c5a645e842c
