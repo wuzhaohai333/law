@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>管理员登录</title>
     <script src="js/js.js"></script>
+    <script src="layui/layui.js"></script>
 </head>
 <body>
 <div style="height: 100%; width: 100%; float: left;">
@@ -105,36 +106,42 @@
 </style>
 
 <script type="text/javascript">
-
+    layui.use('layer', function(){
+        var layer = layui.layer;
+    });
     //回车键按下时执行 Login
     $("body").keydown(function (e) {
         e = e || event;
         if (e.keyCode == 13) {
             sendLoginData();
         }
-    })
+    });
 
     //按下 Login 按钮
     function sendLoginData() {
         var userName = document.getElementById("UserName").value;
         var password = document.getElementById("Password").value;
         if (userName == "") {
-            alert("UserName不能为空！");
+            layer.msg("UserName不能为空！", {icon: 2});
             return;
         }
         if (password == "") {
-            alert("Password不能为空！");
+            layer.msg("Password不能为空！", {icon: 2});
             return;
         }
         $.post("LoginDo", { '_token':'{{csrf_token()}}',userName: userName, password: password },
                 function (response) {
-                    alert(response);
                     if (response == 1) {
-                        window.location.href = "/Admin/Index";
+                        layer.msg('登录成功', {
+                            icon: 1,
+                            time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                        }, function(){
+                            window.location.href = "/adminIndex";
+                        });
                     }else {
-                        alert("账户或密码错误！");
+                        layer.msg(response, {icon: 2});
                     }
-                }, 'json');
+                });
     }
 
 </script>
