@@ -12,4 +12,8 @@ class RegisterController extends Controller
 
         return view('home.register');
     }
+    #律师登录页面
+    public function lawyer_login(){
+        return view('home.lawyer_login');
+    }
 }

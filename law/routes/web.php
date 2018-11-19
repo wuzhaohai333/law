@@ -23,6 +23,9 @@ Route::any('/wx_return','Home\WxController@wx_return');
 #注册成为律师
 Route::any('/register','Home\RegisterController@register');
 
+#律师登录页面
+Route::any('/lawyer_login','Home\RegisterController@lawyer_login');
+
 
 
 
