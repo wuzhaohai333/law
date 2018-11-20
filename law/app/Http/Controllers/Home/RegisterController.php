@@ -15,7 +15,7 @@ class RegisterController extends Controller
         return view('home.register');
     }
     #律师登录页面
-    public function lawyer_login(){
+    public function lawyer_login(Request $request){
         $data = Input::post();
         if($data){
             #判断是否是数字 是手机号登录 不是用户名登录
@@ -32,6 +32,9 @@ class RegisterController extends Controller
             $law_obj=DB::table('law_attorney')->where($where)->first();
             if(empty($law_obj)){
                 echo 2;
+            }else{
+                $request->session()->put('lawyer_info',['attorney_id'=>$law_obj->attorney_id,'attorney_name'=>$law_obj->attorney_name]);
+                echo 1;
             }
         }else{
             return view('home.lawyer_login');

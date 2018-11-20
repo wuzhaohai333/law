@@ -67,7 +67,7 @@
         </ul>
     </div>
     <div class="login">
-        <form class="form">
+        <form class="form" action="javascript:;">
             @csrf
             <div class="common-form-style login-form">
                 <div class="form-list">
@@ -149,7 +149,13 @@
             type:'post',
             dataType:'json',
             success: function (json) {
-                layer.msg(json);
+                if(json == 1){
+                    layer.msg('登录成功',{icon:1}, function () {
+                        window.location.href="/index"
+                    })
+                }else {
+                    layer.msg('账号或密码错误',{icon:2})
+                }
             }
         });
     })
