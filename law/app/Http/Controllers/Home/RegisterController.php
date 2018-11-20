@@ -26,9 +26,9 @@ class RegisterController extends Controller
                 ->where(['attorney_phone'=>$tel['tel']])
                 ->first()),true);
         if($tel){
-            echo 1;
+            echo 1;die;
         }else{
-            echo 2;
+            echo 2;die;
         }
     }
     #接受手机验证码
@@ -62,9 +62,13 @@ class RegisterController extends Controller
             'msg_phone'=>$code['mobile'],
             'msg_code'=>$code['code']
         ];
-        $row = DB::table('law_message')->where($where)->first();
-        if(!empty($row)){
-            echo 1;
+        $tel_code = json_decode(json_encode(DB::table('law_message')->where($where)->first()),true);
+        if(!empty($tel_code)){
+            if(time() - $tel_code['msg_time'] > 300){
+                echo 3;
+            }else{
+                echo 1;
+            }
         }else{
             echo 2;
         }
@@ -72,7 +76,11 @@ class RegisterController extends Controller
     #律师注册入库
     public function lawyer_add(Request $request){
         $data = Input::post();
-        //print_r($data);
+        #判断数据库是否有传过来的手机号，防止重复注册
+        $row = DB::table('law_attorney')->where(['attorney_phone'=>$data['mobilep']])->first();
+        if($row){
+            echo "该手机号已经注册过了";die;
+        }
         ######验证
         $insert = [
             'attorney_may_bel'=>$data['realname'],
