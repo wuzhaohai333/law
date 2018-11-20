@@ -56,16 +56,12 @@
 <body>
 <div class="body no-padding-top">
     <div class="header-block ">
-        <a class="header-home" href="http://m.findlaw.cn">首页</a>    <p class="header-title">会员登录</p>    <a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top" class="header-ask">免费提问</a>
+        <a class="header-home" href="index">首页</a>
+        <p class="header-title">会员登录</p>
+        <a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top" class="header-ask">免费提问</a>
         <button class="header-menu"></button>
     </div>
-    <div class="common-tab-title">
-        <ul class="common-tab-menu">
-            <li class="tab-menu-item"><a href="http://m.findlaw.cn/?c=member&a=logintel">短信登录</a>
-            </li>
-            <li class="tab-menu-item selected"><a href="#">密码登录</a></li>
-        </ul>
-    </div>
+
     <div class="login">
         <form class="form" action="javascript:;">
             @csrf

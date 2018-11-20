@@ -55,26 +55,10 @@
 </head>
 <body>
 <div class="body no-padding-top">
-    <div class="common-anim-wrap move-right-anim lib-vanish" id="lib-header-menu-conetnt">
-        <div class="anim-wrap-content"></div>
-        <div class="lib-header-menu">
-            <p class="lib-header-menu-title"></p>
-            <ul class="list">
-                <li class="list-item"><a href="http://m.findlaw.cn/">找法网首页</a></li>
-                <li class="list-item"><a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top_menu">免费咨询</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/ask/">咨询问答</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/taiyuan">找律师</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/laws/">法律知识</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/law/">学习法律</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/fagui/">查找法规</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/shuofa/">律师说法</a></li>
-                <li class="list-item">
-                    <a href="/login/" class="login">登录 / 注册</a>            </li>
-            </ul>
-        </div>
-    </div>
     <div class="header-block ">
-        <a class="header-home" href="http://m.findlaw.cn">首页</a>    <p class="header-title">律师注册</p>    <a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top" class="header-ask">免费提问</a>
+        <a class="header-home" href="index">首页</a>
+        <p class="header-title">律师注册</p>
+        <a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top" class="header-ask">免费提问</a>
         <button class="header-menu"></button>
     </div>
     <form name='reform' method='post' action='lawyer_add' id="form">
@@ -148,32 +132,6 @@
             <span class="info-item"> 找法网 </span>
             <span class="info-item"> <a href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow">粤ICP备10231287号-4</a></span>
         </p>
-    </div>
-</div>
-<div class="footer">
-    <div class="footer-nav">
-        <a class="nav_a" href="http://m.findlaw.cn/">
-            <i class="index_icon"></i>
-            <em>首页</em>
-        </a>
-        <a class="nav_a active/" href="http://m.findlaw.cn/taiyuan">
-            <i class="findlaw_icon"></i>
-            <em>找个律师</em>
-        </a>
-        <a class="nav_a" href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_footask">
-            <i class="ask_icon"></i>
-            <em>免费提问</em>
-        </a>
-        <div class="nav_a" id="MoreBtn">
-            <i class="more_icon"></i>
-            <em>更多</em>
-            <ul class="tab_item">
-                <li><a href="http://m.findlaw.cn/login/" class="external">我的问题</a></li>
-                <li><a href="http://m.findlaw.cn/law/" class="external">学习法律</a></li>
-                <li><a href="http://m.findlaw.cn/ask/" class="external">找法问答</a></li>
-                <li><a href="http://m.findlaw.cn/?c=Index&a=feedback" class="external">意见反馈</a></li>
-            </ul>
-        </div>
     </div>
 </div>
 <script type='text/javascript' src='{{asset('js/a717c151b6214b53a230ee84258d8083.js')}}' charset='gbk'></script>
