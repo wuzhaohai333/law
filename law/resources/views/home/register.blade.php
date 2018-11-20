@@ -130,7 +130,7 @@
             <div class="aid-tools">
                 <p class="Separator"><span>已有找法网账号？</span></p>
                 <div class="signup">
-                    <a href="http://m.findlaw.cn/login/" class="sign login-in">马上登录</a>
+                    <a href="lawyer_login" class="sign login-in">马上登录</a>
                 </div>
             </div>
         </div>

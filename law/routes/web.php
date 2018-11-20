@@ -45,6 +45,7 @@ Route::any('/lawyer_add','Home\RegisterController@lawyer_add');
 
 
 
+
 ########################后台###########################
 #登录视图
 Route::any('/admin','Admin\AdminController@AdminLogin');

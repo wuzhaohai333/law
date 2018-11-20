@@ -69,23 +69,33 @@ class RegisterController extends Controller
             echo 2;
         }
     }
-    #执行添加
-    public function lawyer_add(){
+    #律师注册入库
+    public function lawyer_add(Request $request){
         $data = Input::post();
-        print_r($data);
+        //print_r($data);
         ######验证
-
-        $insert['attorney_name']=$data['realname'];
-        $insert['attorney_may_bel']=$data['uname'];
-        $insert['attorney_phone']=$data['mobilep'];
-        $insert['attorney_pwd']=md5($data['passwrod']);
-        $insert['attorney_status']=1;
-        $insert['attorney_ctime']=time();
+        $insert = [
+            'attorney_may_bel'=>$data['realname'],
+            'attorney_name'=>$data['uname'],
+            'attorney_phone'=>$data['mobilep'],
+            'attorney_pwd'=>md5($data['passwrod']),
+            'attorney_status'=>1,
+            'attorney_ctime'=>time(),
+        ];
         $row = DB::table('law_attorney')->insert($insert);
         if($row){
-            echo 1;
+            $law_info = json_decode(json_encode(
+                DB::table('law_attorney')
+                    ->where(['attorney_phone'=>$data['mobilep']])
+                    ->first()),true);
+            $request->session()->put('lawyer_info',
+                [
+                     'attorney_id'=>$law_info['attorney_id'],
+                     'attorney_name'=>$law_info['attorney_name']
+                ]);
+            header("location:http://www.law.com/index");
         }else{
-            echo 2;
+            header("location:http://www.law/com/register");
         }
     }
 }
