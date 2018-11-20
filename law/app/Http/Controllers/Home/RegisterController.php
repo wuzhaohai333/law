@@ -15,8 +15,30 @@ class RegisterController extends Controller
         return view('home.register');
     }
     #律师登录页面
-    public function lawyer_login(){
-        return view('home.lawyer_login');
+    public function lawyer_login(Request $request){
+        $data = Input::post();
+        if($data){
+            #判断是否是数字 是手机号登录 不是用户名登录
+            if(is_numeric($data['username'])){
+                $where = ['attorney_phone'=>$data['username']];
+            }else{
+                $where = ['attorney_name'=>$data['username']];
+            }
+            $law_obj=DB::table('law_attorney')->where($where)->first();
+            if(empty($law_obj)){
+                echo 2;
+            }
+            $where['attorney_pwd']=md5($data['password']);
+            $law_obj=DB::table('law_attorney')->where($where)->first();
+            if(empty($law_obj)){
+                echo 2;
+            }else{
+                $request->session()->put('lawyer_info',['attorney_id'=>$law_obj->attorney_id,'attorney_name'=>$law_obj->attorney_name]);
+                echo 1;
+            }
+        }else{
+            return view('home.lawyer_login');
+        }
     }
     #判断手机号是否被注册
     public function is_tel(){
@@ -81,7 +103,7 @@ class RegisterController extends Controller
         if($row){
             echo "该手机号已经注册过了";die;
         }
-        ######验证
+        #######有待完善  验证
         $insert = [
             'attorney_may_bel'=>$data['realname'],
             'attorney_name'=>$data['uname'],

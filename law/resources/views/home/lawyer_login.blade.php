@@ -12,6 +12,8 @@
     <title>找法网会员登录</title>
     <link rel="stylesheet" href="css/df0f5235a76349dc8754eefa5cc07ec9.css" />
     <script type='text/javascript' src='js/f1d2fedfc24948eab768a01f8bff8522.js' charset='gbk'></script>
+    <script src="js/js.js"></script>
+    <script src="layui/layui.js"></script>
     <script type='text/javascript'>
         !(function(win, doc){
             function setFontSize() {
@@ -53,41 +55,19 @@
 </head>
 <body>
 <div class="body no-padding-top">
-    <div class="common-anim-wrap move-right-anim lib-vanish" id="lib-header-menu-conetnt">
-        <div class="anim-wrap-content"></div>
-        <div class="lib-header-menu">
-            <p class="lib-header-menu-title"></p>
-            <ul class="list">
-                <li class="list-item"><a href="http://m.findlaw.cn/">找法网首页</a></li>
-                <li class="list-item"><a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top_menu">免费咨询</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/ask/">咨询问答</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/taiyuan">找律师</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/laws/">法律知识</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/law/">学习法律</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/fagui/">查找法规</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/shuofa/">律师说法</a></li>
-                <li class="list-item">
-                    <a href="/login/" class="login">登录 / 注册</a>            </li>
-            </ul>
-        </div>
-    </div>
     <div class="header-block ">
-        <a class="header-home" href="http://m.findlaw.cn">首页</a>    <p class="header-title">会员登录</p>    <a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top" class="header-ask">免费提问</a>
+        <a class="header-home" href="index">首页</a>
+        <p class="header-title">会员登录</p>
+        <a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top" class="header-ask">免费提问</a>
         <button class="header-menu"></button>
     </div>
-    <div class="common-tab-title">
-        <ul class="common-tab-menu">
-            <li class="tab-menu-item"><a href="http://m.findlaw.cn/?c=member&a=logintel">短信登录</a>
-            </li>
-            <li class="tab-menu-item selected"><a href="#">密码登录</a></li>
-        </ul>
-    </div>
+
     <div class="login">
-        <form class="form" id="form" action="http://uc.findlaw.cn/index.php?c=Login&a=loginSubmit" method="post">
-            <input type="hidden" name="submit" value="yes"/> <input type="hidden" name="from" value="http://m.findlaw.cn/?c=member&a=usercenter"/>
+        <form class="form" action="javascript:;">
+            @csrf
             <div class="common-form-style login-form">
                 <div class="form-list">
-                    <input type="text" class="input-item username" name="userid" placeholder="请输入用户名或手机号码">
+                    <input type="text" class="input-item username" name="username" placeholder="请输入用户名或手机号码">
                     <img src="picture/icon-form-user.png" alt="" class="input-icon">
                 </div>
                 <div class="form-list hidden" id="auth-code">
@@ -104,7 +84,7 @@
                 <p class="error-info"></p>
             </div>
             <div class="form-list">
-                <button class="success-button">登录</button>
+                <button class="success-button" id="but">登录</button>
                 <a href="http://m.findlaw.cn/?c=member&a=getPassword" class="back-home gray-notice">忘记密码？</a>
             </div>
         </form>
@@ -130,32 +110,6 @@
         </p>
     </div>
 </div>
-<div class="footer">
-    <div class="footer-nav">
-        <a class="nav_a" href="http://m.findlaw.cn/">
-            <i class="index_icon"></i>
-            <em>首页</em>
-        </a>
-        <a class="nav_a active/" href="http://m.findlaw.cn/taiyuan">
-            <i class="findlaw_icon"></i>
-            <em>找个律师</em>
-        </a>
-        <a class="nav_a" href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_footask">
-            <i class="ask_icon"></i>
-            <em>免费提问</em>
-        </a>
-        <div class="nav_a" id="MoreBtn">
-            <i class="more_icon"></i>
-            <em>更多</em>
-            <ul class="tab_item">
-                <li><a href="http://m.findlaw.cn/login/" class="external">我的问题</a></li>
-                <li><a href="http://m.findlaw.cn/law/" class="external">学习法律</a></li>
-                <li><a href="http://m.findlaw.cn/ask/" class="external">找法问答</a></li>
-                <li><a href="http://m.findlaw.cn/?c=Index&a=feedback" class="external">意见反馈</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
 <script type='text/javascript' src='js/3804fd6ba718445e89c7bbc06286a4cb.js' charset='gbk'></script>
 <script type="text/javascript">
     Zepto(document).ready(function ($) {
@@ -163,14 +117,16 @@
         Common.top_menu_2();
         Common.footer_menu_1();
     });
+    layui.use('layer', function(){
+        var layer = layui.layer;
+    });
     $(".password,.username").change(function () {
         if ($(this).val()) {
             $(this).removeClass("warn").addClass("success");
             $(".error-info").removeClass("active");
         }
     });
-    //电话验证
-    $('#form').submit(function () {
+    $('#but').click(function () {
         var password = $(".password").val();
         var username = $(".username").val();
         if (username == '') {
@@ -183,8 +139,22 @@
             $(".error-info").text("密码不能为空！").addClass("active");
             return false;
         }
-        return true;
-    });
+        $.ajax({
+            url:'lawyer_login',
+            data:{'_token':'{{csrf_token()}}',username:username,password:password},
+            type:'post',
+            dataType:'json',
+            success: function (json) {
+                if(json == 1){
+                    layer.msg('登录成功',{icon:1}, function () {
+                        window.location.href="/index"
+                    })
+                }else {
+                    layer.msg('账号或密码错误',{icon:2})
+                }
+            }
+        });
+    })
 </script>
 </body>
 </html>
