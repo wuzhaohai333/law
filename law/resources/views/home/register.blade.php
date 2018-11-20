@@ -279,7 +279,7 @@
                 async: false,
                 success: function(rs){
                     isget = false;
-                    if (rs.status == "1") {
+                    if (rs == 1) {
                         iswait = 60;
                         countdown(o);
                     } else {
@@ -369,7 +369,7 @@
                 if (res == 1) {
                     flag = true;
                 } else if(res == 3){
-                    layer.msg('验证码已经超过有效期，请重新获取！',{icon:2});
+                    layer.msg('验证码！',{icon:2});
                     flag = false;
                 } else {
                     layer.msg('您输入的短信验证码错误！',{icon:2});
@@ -382,7 +382,7 @@
     //手机号格式判断
     $("#mobileReg").change(function () {
         var val = $(this).val();
-        if (val && !(/^1[34578]\d{9}$/.test(val))) {
+        if (val && !(/^1[345678]\d{9}$/.test(val))) {
             layer.msg('手机号格式不正确！',{icon:2});
         }
     });
