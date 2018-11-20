@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -167,14 +166,32 @@
 
 <aside>
     <ul>
-        <li><a href="javscript:;" class="sp1"><i class="iconfont">&#xe60b;</i>首页<i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>
+        <li><a href="/index" class="sp1"><i class="iconfont">&#xe60b;</i>首页<i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>
         <li style="margin-top: .2rem;"><a href="javscript:;" class="sp2"><i class="iconfont">&#xe617;</i>找律师<i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>
-        <li style="margin-top: .2rem;"><a href="javscript:;" class="sp3"><i class="iconfont">&#xe717;</i>我的勋章<i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>
-        <li><a href="javscript:;" class="sp4"><i class="iconfont">&#xe671;</i>我的积分<i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>
+        <li style="margin-top: .2rem;"><a href="javscript:;" class="sp3">
+                <i class="iconfont">&#xe717;</i>我的勋章:@if($medal == 0)
+                            普通用户
+                         @elseif($medal == 1)
+                            青铜用户
+                         @elseif($medal == 2)
+                            白银用户
+                         @elseif($medal == 3)
+                            黄金用户
+                         @elseif($medal == 4)
+                            钻石用户
+                         @endif
+        <i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>
+        <li><a href="javscript:;" class="sp4">
+                <i class="iconfont">&#xe671;</i>我的积分:@if($grade == 0)
+                            (暂无积分)
+                        @else
+                            {{$grade}}
+                        @endif
+        <i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>
         <li><a href="javscript:;" class="sp5"><i class="iconfont">&#xe60b;</i>我的咨询<i class="iconfont" style="float: right;font-size: .30rem;">&#xe602;</i></a></li>
         {{--<li style="margin-top: .2rem;"><a href="javscript:;" class="sp6"><i class="iconfont">&#xe617;</i>我的心愿单<i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>--}}
         {{--<li><a href="javscript:;" class="sp7"><i class="iconfont">&#xe60b;</i>去注册<i class="iconfont" style="float: right;font-size: .30rem;">&#xe602;</i></a></li>--}}
-        <li><a href="javscript:;" class="sp8"><i class="iconfont">&#xe75f;</i>我的账单<i class="iconfont" style="float: right;font-size: .30rem;">&#xe602;</i></a></li>
+        <li><a href="/bill" class="sp8"><i class="iconfont">&#xe75f;</i>我的账单<i class="iconfont" style="float: right;font-size: .30rem;">&#xe602;</i></a></li>
     </ul>
 </aside>
 <div style="height: 1rem;"></div>
@@ -189,9 +206,7 @@
     $('footer a').click(function(){
         $(this).addClass('on').siblings().removeClass('on');
     });
-    $('a').click(function(){
-        alert('暂时开发中,敬请期待!');
-    })
+
 </script>
 </body>
 </html>
