@@ -127,8 +127,12 @@ Route::any('/comment_list','Admin\CommentController@commentList');
 Route::any('/classify_add','Admin\ClassifyController@classifyAdd');
 #分类添加
 Route::any('/classify_add_do','Admin\ClassifyController@classifyAddDo');
+#分类修改
+Route::any('/classify_up_do','Admin\ClassifyController@classifyUpDo');
 #分类列表
 Route::any('/classify_list','Admin\ClassifyController@classifyList');
+#分类列表
+Route::any('/delete_class','Admin\ClassifyController@deleteClass');
 #管理员添加
 Route::any('/admin_add','Admin\AdminController@adminAdd');
 #管理员添加
