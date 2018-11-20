@@ -111,3 +111,17 @@ Route::any('/classify_add','Admin\ClassifyController@classifyAdd');
 Route::any('/classify_add_do','Admin\ClassifyController@classifyAddDo');
 #分类列表
 Route::any('/classify_list','Admin\ClassifyController@classifyList');
+#管理员添加
+Route::any('/admin_add','Admin\AdminController@adminAdd');
+#管理员添加
+Route::any('/admin_add_do','Admin\AdminController@adminAddDo');
+#管理员列表
+Route::any('/admin_list','Admin\AdminController@adminList');
+#管理员删除
+Route::any('/admin_delete','Admin\AdminController@adminDelete');
+#管理员取消删除
+Route::any('/admin_no_delete','Admin\AdminController@adminNoDelete');
+#管理员修改密码
+Route::any('/admin_up_pwd','Admin\AdminController@adminUpPwd');
+#管理员修改密码执行
+Route::any('/admin_up_pwd_do','Admin\AdminController@adminUpPwdDo');

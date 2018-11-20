@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Response;
-
-class ClassifyController extends Controller
+use Illuminate\Support\Facades\DB;
+class ClassifyController extends CommController
 {
     //分类添加
     public function classifyAdd(){
@@ -20,20 +20,18 @@ class ClassifyController extends Controller
         return view('admin.classifyList',['title'=>'分类列表']);
     }
     //添加
-    public function classifyAddDo(Request $request){
+    public function classifyAddDo(){
         $arr=Input::get();
-        dump($arr);
-        dump($_FILES["file"]);
-        if ($_FILES["file"] > 0)
-        {
-            echo "Error: " . $_FILES["file"]["error"] . "<br />";
-        }
-        else
-        {
-            echo "Upload: " . $_FILES["file"]["name"] . "<br />";
-            echo "Type: " . $_FILES["file"]["type"] . "<br />";
-            echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
-            echo "Stored in: " . $_FILES["file"]["tmp_name"];
+        $new_arr=[];
+        $new_arr['classify_name']=$arr['name'];
+        $new_arr['classify_img']=$arr['img'];
+        $new_arr['classify_status']=1;
+        $new_arr['classify_ctime']=time();
+        $res=DB::table('law_classify')->insert($new_arr);
+        if($res){
+            return view('admin.classifyList',['title'=>'分类列表']);
+        }else{
+            return view('admin.classifyAdd',['title'=>'分类添加']);
         }
     }
 }

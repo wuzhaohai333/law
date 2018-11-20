@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 
-class UserController extends Controller
+class UserController extends CommController
 {
     //用户列表
     public function userList(Request $request){

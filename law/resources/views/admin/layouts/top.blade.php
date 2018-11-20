@@ -22,7 +22,7 @@
                     <dd><a href="">安全设置</a></dd>
                 </dl>
             </li>
-            <li class="layui-nav-item"><a href="">退了</a></li>
+            <li class="layui-nav-item"><a href="admin">退了</a></li>
         </ul>
     </div>
 
@@ -61,6 +61,13 @@
                     <dl class="layui-nav-child">
                         <dd><a href="classify_add">分类添加</a></dd>
                         <dd><a href="classify_list">分类列表</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">管理员管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="admin_add">管理员添加</a></dd>
+                        <dd><a href="admin_list">管理员列表</a></dd>
                     </dl>
                 </li>
             </ul>
