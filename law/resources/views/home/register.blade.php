@@ -12,6 +12,8 @@
     <title>律师注册</title>
     <link rel="stylesheet" href="{{asset('css/f141279dadde4bb7b1d36ec5d9655cf2.css')}}" />
     <script type='text/javascript' src='{{asset('js/4b108b0d99814e2c821c7f2958c9b81f.js')}}' charset='gbk'></script>
+    <script src="js/js.js"></script>
+    <script src="layui/layui.js"></script>
     <script type='text/javascript'>
         !(function(win, doc){
             function setFontSize() {
@@ -53,51 +55,18 @@
 </head>
 <body>
 <div class="body no-padding-top">
-    <div class="common-anim-wrap move-right-anim lib-vanish" id="lib-header-menu-conetnt">
-        <div class="anim-wrap-content"></div>
-        <div class="lib-header-menu">
-            <p class="lib-header-menu-title"></p>
-            <ul class="list">
-                <li class="list-item"><a href="http://m.findlaw.cn/">找法网首页</a></li>
-                <li class="list-item"><a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top_menu">免费咨询</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/ask/">咨询问答</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/taiyuan">找律师</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/laws/">法律知识</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/law/">学习法律</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/fagui/">查找法规</a></li>
-                <li class="list-item"><a href="http://m.findlaw.cn/shuofa/">律师说法</a></li>
-                <li class="list-item">
-                    <a href="/login/" class="login">登录 / 注册</a>            </li>
-            </ul>
-        </div>
-    </div>
     <div class="header-block ">
-        <a class="header-home" href="http://m.findlaw.cn">首页</a>    <p class="header-title">律师注册</p>    <a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top" class="header-ask">免费提问</a>
+        <a class="header-home" href="index">首页</a>
+        <p class="header-title">律师注册</p>
+        <a href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_top" class="header-ask">免费提问</a>
         <button class="header-menu"></button>
     </div>
-    <form name='reform' method='post' action='http://uc.findlaw.cn/index.php?c=Register&a=saveRegData' id="form">
+    <form name='reform' method='post' action='lawyer_add' id="form">
+         @csrf
         <div class="login">
             <div class="common-form-style login-form">
                 <div class="form-list">
                     <input type="text" name="realname" class="input-item lawyer-sign username" id="realname" maxlength="10" placeholder="请输入真实姓名">
-                </div>
-                <div class="form-list">
-                    <input type="text" name="licenseno" class="input-item lawyer-sign username" maxlength="17" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')" id="licenseno" placeholder="请输入执业证号">
-                </div>
-                <div class="form-list">
-                    <input type="text" class="input-item lawyer-sign username" placeholder="执业地区" disabled="disabled">
-                    <div class="address">
-                        <div>
-                            <select name="province" class="select" id="caseProvince">
-                                <option value="">请选择</option>
-                            </select>
-                        </div>
-                        <div>
-                            <select name="city" class="select" id="caseCity">
-                                <option value="">请选择</option>
-                            </select>
-                        </div>
-                    </div>
                 </div>
                 <div class="form-list">
                     <input type="text" name="uname" class="input-item lawyer-sign username" maxlength="14" id="uname" placeholder="请输入用户名">
@@ -145,18 +114,13 @@
             <div class="aid-tools">
                 <p class="Separator"><span>已有找法网账号？</span></p>
                 <div class="signup">
-                    <a href="http://m.findlaw.cn/login/" class="sign login-in">马上登录</a>
+                    <a href="lawyer_login" class="sign login-in">马上登录</a>
                 </div>
             </div>
         </div>
         <input name="reg_type" value="1" type="hidden"> <input type="hidden" name="from" value="wap"/>
     </form>
-    <div class="footer-login border-top">
-        <p class="login-in">
-            <a href="http://m.findlaw.cn/login/">登录</a>
-            <a href="http://m.findlaw.cn/register">注册</a>
-            <a href="http://m.findlaw.cn/?c=index&a=lawyerentrance" class="border-l">律师入口</a>        </p>
-    </div>    <div class="footer-appear ">
+    <div class="footer-appear ">
         <p class="footer-appear-center">
             <a href="http://m.findlaw.cn/" class="footer-appear-guide">触屏版</a>
             <a href="http://china.findlaw.cn/" class="footer-appear-guide">电脑版</a>
@@ -168,32 +132,6 @@
             <span class="info-item"> 找法网 </span>
             <span class="info-item"> <a href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow">粤ICP备10231287号-4</a></span>
         </p>
-    </div>
-</div>
-<div class="footer">
-    <div class="footer-nav">
-        <a class="nav_a" href="http://m.findlaw.cn/">
-            <i class="index_icon"></i>
-            <em>首页</em>
-        </a>
-        <a class="nav_a active/" href="http://m.findlaw.cn/taiyuan">
-            <i class="findlaw_icon"></i>
-            <em>找个律师</em>
-        </a>
-        <a class="nav_a" href="https://m.findlaw.cn/ask/ask.php?frompage=mobile_footask">
-            <i class="ask_icon"></i>
-            <em>免费提问</em>
-        </a>
-        <div class="nav_a" id="MoreBtn">
-            <i class="more_icon"></i>
-            <em>更多</em>
-            <ul class="tab_item">
-                <li><a href="http://m.findlaw.cn/login/" class="external">我的问题</a></li>
-                <li><a href="http://m.findlaw.cn/law/" class="external">学习法律</a></li>
-                <li><a href="http://m.findlaw.cn/ask/" class="external">找法问答</a></li>
-                <li><a href="http://m.findlaw.cn/?c=Index&a=feedback" class="external">意见反馈</a></li>
-            </ul>
-        </div>
     </div>
 </div>
 <script type='text/javascript' src='{{asset('js/a717c151b6214b53a230ee84258d8083.js')}}' charset='gbk'></script>
@@ -243,6 +181,9 @@
 </script>
 <script src="{{asset('js/wyarea-1.0.min.js')}}"></script>
 <script>
+    layui.use('layer', function(){
+        var layer = layui.layer;
+    });
     var citycode = "340200";
     $(document).ready(function () {
         WYArea.init(function () {
@@ -268,12 +209,14 @@
             var vcode = $("#vcodeValue").val();
             if (vcode) {
                 if (checkyzm() == 0) {
-                    alert("验证码错误");
+                    layer.msg("验证码错误",{
+                        icon:2
+                    });
                     $('#auth-code').show();
                     return;
                 }
             } else {
-                alert("请您输入验证码");
+                layer.msg("请您输入验证码",{icon:2});
                 $('#auth-code').show();
                 return;
             }
@@ -281,20 +224,20 @@
         var mobile = $("#mobileReg").val().replace(/[ ]/g, ""),
                 ismobile  = /^1[345678][0-9]{9}$/;
         if (!ismobile.test(mobile)) {
-            alert("手机号格式不正确");
+            layer.msg("手机号格式不正确",{icon:2});
         } else {
             if (!getMoible(mobile)) return;
             $(o).text("正在发送...");
             isget = true;
             $.ajax({
-                url: 'http://m.findlaw.cn/?c=member&a=sendSmsCode&contenttype=0',
-                type: 'POST',
+                url: "phone_code",
+                type: 'post',
                 dataType: 'json',
-                data: {mobile: mobile},
+                data: {'_token':'{{csrf_token()}}',mobile: mobile},
                 async: false,
                 success: function(rs){
                     isget = false;
-                    if (rs.status == "1") {
+                    if (rs == 1) {
                         iswait = 60;
                         countdown(o);
                     } else {
@@ -309,16 +252,16 @@
     function getMoible(tel) {
         var flag = false;
         $.ajax({
-            url: 'http://m.findlaw.cn/index.php?c=member&a=checkMobileExist',
+            url: 'is_tel',
             type: 'POST',
             dataType: 'json',
-            data: {mobile: tel},
+            data: {'_token':'{{csrf_token()}}',tel: tel},
             async: false,
             success: function (res) {
-                if (res.status == 0) {
+                if (res == 2) {
                     flag = true;
                 } else {
-                    alert('该手机号码已经注册过了，可直接登录使用！');
+                    layer.msg('该手机号码已经注册过了，可直接登录使用！',{icon:3});
                     flag = false;
                 }
             }
@@ -339,52 +282,55 @@
             }
         }, 1000);
     }
-    //更新验证码
-    function change_verify(obj) {
-        var ntime = new Date();
-        var url = "http://m.findlaw.cn/index.php?c=Ask&a=createVerify" + '&t=' + ntime;
-        $(obj).attr('src', url);
-    }
-    // 校对验证码
-    function checkyzm() {
-        var verify_value = $('#vcodeValue').val();
-        if (verify_value) {
-            $.ajax({
-                url: 'http://m.findlaw.cn/index.php?c=Ask&a=checkVerify',
-                type: 'POST',
-                dataType: 'json',
-                data: {value: verify_value},
-                async: false,
-                success: function (data) {
-                    if (data.status == 1) {
-                        isvlid = 1;
-                    } else {
-                        isvlid = 0;
-                        var ntime = new Date();
-                        var url = "http://m.findlaw.cn/index.php?c=Ask&a=createVerify" + '&t=' + ntime;
-                        $('#imgVcode').attr('src', url);
-                    }
-                }
-            });
-        }
-        return isvlid;
-    }
+//    //更新验证码
+//    function change_verify(obj) {
+//        var ntime = new Date();
+//        var url = "http://m.findlaw.cn/index.php?c=Ask&a=createVerify" + '&t=' + ntime;
+//        $(obj).attr('src', url);
+//    }
+//    // 校对验证码
+//    function checkyzm() {
+//        var verify_value = $('#vcodeValue').val();
+//        if (verify_value) {
+//            $.ajax({
+//                url: 'http://m.findlaw.cn/index.php?c=Ask&a=checkVerify',
+//                type: 'POST',
+//                dataType: 'json',
+//                data: {value: verify_value},
+//                async: false,
+//                success: function (data) {
+//                    if (data.status == 1) {
+//                        isvlid = 1;
+//                    } else {
+//                        isvlid = 0;
+//                        var ntime = new Date();
+//                        var url = "http://m.findlaw.cn/index.php?c=Ask&a=createVerify" + '&t=' + ntime;
+//                        $('#imgVcode').attr('src', url);
+//                    }
+//                }
+//            });
+//        }
+//        return isvlid;
+//    }
     //获取手机是否存在
     function checkSmsCode() {
         var tel = $('#mobileReg').val();
         var vcode = $('#code_input').val();
         var flag = false;
         $.ajax({
-            url: 'http://m.findlaw.cn/index.php?c=member&a=checkSmsCode&contenttype=0',
+            url: 'verify_code',
             type: 'POST',
             dataType: 'json',
-            data: {mobile: tel,code:vcode},
+            data: {'_token':'{{csrf_token()}}',mobile: tel,code:vcode},
             async: false,
             success: function (res) {
-                if (res.status == 1) {
+                if (res == 1) {
                     flag = true;
+                } else if(res == 3){
+                    layer.msg('验证码！',{icon:2});
+                    flag = false;
                 } else {
-                    alert('您输入的短信验证码错误！');
+                    layer.msg('您输入的短信验证码错误！',{icon:2});
                     flag = false;
                 }
             }
@@ -394,21 +340,14 @@
     //手机号格式判断
     $("#mobileReg").change(function () {
         var val = $(this).val();
-        if (val && !(/^1[34578]\d{9}$/.test(val))) {
-            alert('手机号格式不正确！');
-        }
-    });
-    $("#licenseno").change(function () {
-        var licenseno = $(this).val();
-        var reg = /^[a-zA-Z\d]{5,17}$/;
-        if (licenseno == '' || !reg.test(licenseno)) {
-            alert("请输入正确的执业证号！");
+        if (val && !(/^1[345678]\d{9}$/.test(val))) {
+            layer.msg('手机号格式不正确！',{icon:2});
         }
     });
     //密码处理
     $(".password").change(function () {
         if ($(this).val().length < 8) {
-            alert('密码不能少于8位！');
+            layer.msg('密码不能少于8位！',{icon:2});
         }
     });
     $(".repassword").change(function () {
@@ -417,7 +356,7 @@
             if ($(this).val().length < 8) {
                 werninfo = '密码不能少于8位！';
             }
-            alert(werninfo);
+            layer.msg(werninfo,{icon:2});
         }
     });
     //密码强弱判断
@@ -469,37 +408,27 @@
     $('#form').submit(function () {
         var citycode = $('#realname').val();
         if (citycode == '') {
-            alert('请输入真实姓名');
-            return false;
-        }
-        var citycode = $('#licenseno').val();
-        if (citycode == '') {
-            alert('请输入执业证号');
-            return false;
-        }
-        var citycode = $('#caseCity').val();
-        if (citycode == '') {
-            alert('请选择地区');
+            layer.msg('请输入真实姓名',{icon:2});
             return false;
         }
         var citycode = $('#uname').val();
         if (citycode == '') {
-            alert('请输入用户名');
+            layer.msg('请输入用户名',{icon:2});
             return false;
         }
         var mobile = $("#mobileReg").val().replace(/[ ]/g, ""),
                 ismobile  = /^1[345678][0-9]{9}$/;
         if (!ismobile.test(mobile)) {
-            alert('手机号格式不正确！');
+            layer.msg('手机号格式不正确！',{icon:2});
             return false;
         }
         if ($('.repassword').val() != $(".password").val() || $('.repassword').val().length < 8) {
-            alert('您两次输入的密码不一致！');
+            layer.msg('您两次输入的密码不一致！',{icon:2});
             return false;
         }
         var agreedval = $("#agreedval").val();
         if (agreedval == 0) {
-            alert('您未同意注册协议！');
+            layer.msg('您未同意注册协议！',{icon:2});
             return false;
         }
         if (checkSmsCode()) {

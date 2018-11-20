@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class AttorneyController extends Controller
+class AttorneyController extends CommController
 {
     //律师列表
     public function attorneyList(){
