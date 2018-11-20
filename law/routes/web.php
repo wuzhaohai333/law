@@ -46,6 +46,38 @@ Route::any('/lawyer_add','Home\RegisterController@lawyer_add');
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ########################后台###########################
 #登录视图
 Route::any('/admin','Admin\AdminController@AdminLogin');
@@ -59,6 +91,10 @@ Route::any('/LoginDo','Admin\AdminController@LoginDo');
 Route::any('/adminIndex','Admin\AdminController@AdminIndex');
 #用户列表
 Route::any('/userList','Admin\UserController@userList');
+#用户拉黑
+Route::any('/block_user','Admin\UserController@blockUser');
+#用户拉黑
+Route::any('/cancel_user','Admin\UserController@cancelUser');
 #用户充值
 Route::any('/user_top-up','Admin\UserController@userTopUp');
 #律师列表
