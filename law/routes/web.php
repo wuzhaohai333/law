@@ -14,12 +14,24 @@
 Route::get('/', function () {
     return view('welcome');
 });
+#首页
+Route::any('/index','Home\IndexController@index');
 #个人中心
 Route::any('/center','Home\CenterController@center');
-
+#用户账单(可以查看自己的余额，也可以进行充值)
+Route::any('/bill','Home\WxController@bill');
+#点击充值（进入充值页面）
+Route::any('/cz','Home\WxController@cz');
+#去支付（调微信统一下单）
+Route::any('/goPay','Home\WxController@goPay');
+#微信异步回调
+Route::any('/weixinnotify_url', 'Home\WxController@weixinNotify_url');
 #微信授权回调
 Route::any('/wx_return','Home\WxController@wx_return');
-
+#法律知识
+Route::any('/lawKnowledge','Home\LawController@lawKnowledge');
+#找律师
+Route::any('/findLawyer','Home\LawController@findLawyer');
 #注册成为律师
 Route::any('/register','Home\RegisterController@register');
 

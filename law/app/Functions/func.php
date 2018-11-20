@@ -26,7 +26,16 @@ function curlRequest($url,$data = ''){
     return $content;
 }
 
-
+/**生成订单号
+ * @return string 一个字符串
+ */
+function getOrderNo(){
+    $year = date('y');
+    $month = date('m');
+    $day = date('d');
+    $str = rand(00000,99999);
+    return $year.$month.$day.$str;
+}
 
 //数组转xml
 function ArrToXml($arr)

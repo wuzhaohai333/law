@@ -9,7 +9,6 @@ class RegisterController extends Controller
 {
     #律师注册界面
     public function register(){
-
         return view('home.register');
     }
 }
