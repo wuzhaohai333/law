@@ -55,6 +55,9 @@ Route::any('/verify_code','Home\RegisterController@verify_code');
 #律师注册 添加
 Route::any('/lawyer_add','Home\RegisterController@lawyer_add');
 
+#律师个人中心
+Route::any('/law_center','Home\CenterController@law_center');
+
 
 
 
