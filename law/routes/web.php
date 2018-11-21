@@ -130,6 +130,10 @@ Route::any('/draft_list','Admin\DraftController@draftList');
 Route::any('/comment_list','Admin\CommentController@commentList');
 #标杆用户
 Route::any('/comment_sightcing','Admin\CommentController@commentSightcing');
+#幸运用户
+Route::any('/comment_good','Admin\CommentController@commentGood');
+#删除评论
+Route::any('/comment_delete','Admin\CommentController@commentDelete');
 #分类添加
 Route::any('/classify_add','Admin\ClassifyController@classifyAdd');
 #分类添加

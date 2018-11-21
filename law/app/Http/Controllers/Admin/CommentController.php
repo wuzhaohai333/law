@@ -23,11 +23,20 @@ class CommentController extends CommController
     public function commentSightcing(){
         $type=Input::get('type');
         $comment_id=Input::get('comment_id');
+        $status=Input::get('status');
         $where=[
             'comment_id'=>$comment_id
         ];
+        $up_where=[
+            'is_sightcing'=>1
+        ];
+        if($status=='user'){
+            $up_where['comment_status']=1;
+        }else{
+            $up_where['comment_status']=2;
+        }
         if($type==1){
-            DB::table('law_comment')->where(['is_sightcing'=>1])->update(['is_sightcing'=>0]);
+            DB::table('law_comment')->where($up_where)->update(['is_sightcing'=>0]);
             $res=DB::table('law_comment')->where($where)->update(['is_sightcing'=>1]);
             if($res){
                 echo 1;
@@ -35,12 +44,49 @@ class CommentController extends CommController
                 echo 2;
             }
         }else{
-            $res=DB::table('law_comment')->where(['is_sightcing'=>1])->update(['is_sightcing'=>0]);
+            $res=DB::table('law_comment')->where(['comment_id'=>$comment_id])->update(['is_sightcing'=>0]);
             if($res){
                 echo 1;
             }else{
                 echo 2;
             }
+        }
+    }
+    //选取幸运用户
+    public function commentGood(){
+        $type=Input::get('type');
+        $comment_id=Input::get('comment_id');
+        $where=[
+            'comment_id'=>$comment_id
+        ];
+        if($type==1){
+            DB::table('law_comment')->where(['is_good'=>1])->update(['is_good'=>0]);
+            $res=DB::table('law_comment')->where($where)->update(['is_good'=>1]);
+            if($res){
+                echo 1;
+            }else{
+                echo 2;
+            }
+        }else{
+            $res=DB::table('law_comment')->where(['is_good'=>1])->update(['is_good'=>0]);
+            if($res){
+                echo 1;
+            }else{
+                echo 2;
+            }
+        }
+    }
+    //删除评论
+    public function commentDelete(){
+        $comment_id=Input::get('comment_id');
+        $where=[
+            'comment_id'=>$comment_id
+        ];
+        $res=DB::table('law_comment')->where($where)->delete();
+        if($res){
+            echo 1;
+        }else{
+            echo 2;
         }
     }
 }
