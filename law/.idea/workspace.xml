@@ -2,10 +2,111 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e80abd2-15f3-47df-896a-7b18ae8bb9fa" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a1_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a2_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a3_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a4_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a5_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/a6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bwico1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bwtel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/denglubg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/diamond.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ffc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ficon1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ficon2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/firm_teambg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/firm_topbg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/firm_topbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/frame.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/goback.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/hda_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon22.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon23.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon25.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon26.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon27.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon34.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon35.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon37.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon38.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon41.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon42.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon43.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon44.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon45.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon46.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon47.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon49.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon51.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon9.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iconfont-dagouxuanzhong.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/inicon1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/inicon2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/inicon3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/inicon4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/law_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/lawyer_login_top.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/leaguer_nav_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/levle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/lyan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/newtico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/off_zx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/on_zx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/pactad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/person.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/price_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ser.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/star.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/vip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/waves.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wba_tb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wti_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wx_tb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/xzsx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/2770ed7492f8a22e.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/3516f23e91b79e5d.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/975d5d477ea38bef.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/aq.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/arrow_left_icon.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/bea56b7aa1ea5fac.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/czls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/d2d1caa4257c1f2c.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/e938be0ad71874e8.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/picture/fh.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
@@ -19,14 +120,25 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/LawController.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/RegisterController.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Lib/QRcode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/law_touch.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/mobi.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/new_file.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/other.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/reset.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/weichat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/b2587d39eb5d4a439d5e21d68433affc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/cebianl.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery-1.8.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.cookie.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.superslide.2.1.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jweixin-1.2.0.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/mui.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/new_file.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/touchslide.1.1.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/home/bill.blade.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/home/center.blade.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/home/findLawyer.blade.php" />
@@ -57,11 +169,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.3174872">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.340909">
+              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
               </folding>
@@ -72,8 +184,48 @@
       <file leaf-file-name="LawController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/LawController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.840909">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            <state vertical-scroll-proportion="-7.9545455">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="findLawyer.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/home/findLawyer.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.1188455">
+              <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bill.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home/bill.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.7727275">
+              <caret line="6" column="79" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CenterController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/CenterController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.0227275">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -82,7 +234,7 @@
       <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.977273">
+            <state vertical-scroll-proportion="-8.613636">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
@@ -92,39 +244,24 @@
       <file leaf-file-name="WxController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/WxController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.818182">
-              <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
+            <state vertical-scroll-proportion="105.795456">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="e#45#73#0#PHP" expanded="true" />
-                <element signature="e#215#1966#0#PHP" expanded="false" />
-                <element signature="e#1069#1408#0#PHP" expanded="false" />
-                <element signature="e#1252#1408#0#PHP" expanded="false" />
-                <element signature="e#1437#1554#0#PHP" expanded="false" />
-                <element signature="e#1982#2304#0#PHP" expanded="false" />
-                <element signature="e#2319#2381#0#PHP" expanded="false" />
+                <element signature="e#4250#4405#0#PHP" expanded="false" />
+                <element signature="e#4429#4601#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topUp.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/home/topUp.blade.php">
+      <file leaf-file-name="center.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home/center.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.0227275">
-              <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="func.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Functions/func.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-71.27273">
-              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.0454545">
+              <caret line="166" column="7" selection-start-line="166" selection-start-column="7" selection-end-line="166" selection-end-column="7" />
               <folding>
-                <element signature="e#8#111#0#PHP" expanded="false" />
-                <element signature="n#curlRequest#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -133,9 +270,11 @@
       <file leaf-file-name="menu.php" pinned="true" current-in-tab="false">
         <entry file="REMOTE_DEPLOYMENT_FS://&lt;e61a1942-a36a-4974-89d6-8a4c3aaadf62&gt;/data/wwwroot/default/weixin/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.209877">
-              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-              <folding />
+            <state vertical-scroll-proportion="-5.617284">
+              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+              <folding>
+                <element signature="n#curlRequest#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,7 +287,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="&lt;e61a1942-a36a-4974-89d6-8a4c3aaadf62&gt;/usr/local/nginx/conf/vhost/law.conf" />
         <option value="&lt;e61a1942-a36a-4974-89d6-8a4c3aaadf62&gt;/data/wwwroot/default/weixin/callback.php" />
         <option value="$PROJECT_DIR$/.env" />
@@ -160,20 +298,21 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Home/RegisterController.php" />
         <option value="$PROJECT_DIR$/resources/views/home/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" />
-        <option value="$PROJECT_DIR$/resources/views/home/findLawyer.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Home/LawController.php" />
         <option value="$PROJECT_DIR$/resources/views/home/lawKnowledge.blade.php" />
         <option value="&lt;e61a1942-a36a-4974-89d6-8a4c3aaadf62&gt;/data/wwwroot/default/weixin/menu.php" />
         <option value="&lt;87c1040b-efff-402d-a916-f2a576ebda18&gt;/resources/views/home/center.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home/center.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home/bill.blade.php" />
         <option value="$PROJECT_DIR$/app/Functions/func.php" />
         <option value="$PROJECT_DIR$/public/js/new_file.js" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/resources/views/home/topUp.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Home/WxController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Home/WxController.php" />
+        <option value="$PROJECT_DIR$/resources/views/home/center.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Home/LawController.php" />
+        <option value="$PROJECT_DIR$/resources/views/home/findLawyer.blade.php" />
       </list>
     </option>
   </component>
@@ -217,6 +356,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -246,31 +386,165 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="law" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../phone_mall" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/phpServer/wwwroot/default/Law/law/law/resources/views/welcome.blade.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\phpServer\wwwroot\default\Law\law\law\app\Lib" />
-      <recent name="D:\phpServer\wwwroot\default\Law\law\law\resources\views\home" />
       <recent name="D:\phpServer\wwwroot\default\Law\law\law\public\css" />
       <recent name="D:\phpServer\wwwroot\default\Law\law\law\public\images" />
       <recent name="D:\phpServer\wwwroot\default\Law\law\law\public\js" />
+      <recent name="D:\phpServer\wwwroot\default\Law\law\law\public\picture" />
+      <recent name="D:\phpServer\wwwroot\default\Law\law\law\resources\views\home" />
     </key>
   </component>
   <component name="RunManager">
@@ -317,11 +591,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.01375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -362,33 +636,21 @@
           <url>REMOTE_DEPLOYMENT_FS://&lt;e61a1942-a36a-4974-89d6-8a4c3aaadf62&gt;/data/wwwroot/default/weixin/menu.php</url>
           <line>3</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Functions/func.php</url>
+          <line>59</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="677" column="42" selection-start-line="677" selection-start-column="42" selection-end-line="677" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -406,12 +668,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#215#1966#0#PHP" expanded="false" />
-            <element signature="e#1069#1408#0#PHP" expanded="false" />
-            <element signature="e#1252#1408#0#PHP" expanded="false" />
-            <element signature="e#1437#1554#0#PHP" expanded="false" />
-            <element signature="e#1982#2304#0#PHP" expanded="false" />
-            <element signature="e#2319#2381#0#PHP" expanded="false" />
+            <element signature="e#4250#4405#0#PHP" expanded="false" />
+            <element signature="e#4429#4601#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -421,8 +679,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
           <folding>
+            <element signature="e#8#111#0#PHP" expanded="false" />
             <element signature="n#curlRequest#0;n#!!top" expanded="false" />
+            <element signature="n#getOrderNo#0;n#!!top" expanded="false" />
             <element signature="n#ArrToXml#0;n#!!top" expanded="false" />
+            <element signature="n#XmlToArr#0;n#!!top" expanded="false" />
+            <element signature="n#add_salt#0;n#!!top" expanded="false" />
+            <element signature="n#newPwd#0;n#!!top" expanded="false" />
+            <element signature="n#getCode#0;n#!!top" expanded="false" />
+            <element signature="n#sendSms#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -441,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -459,12 +723,8 @@
           <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
           <folding>
             <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#215#1966#0#PHP" expanded="false" />
-            <element signature="e#1069#1408#0#PHP" expanded="false" />
-            <element signature="e#1252#1408#0#PHP" expanded="false" />
-            <element signature="e#1437#1554#0#PHP" expanded="false" />
-            <element signature="e#1982#2304#0#PHP" expanded="false" />
-            <element signature="e#2319#2381#0#PHP" expanded="false" />
+            <element signature="e#4250#4405#0#PHP" expanded="false" />
+            <element signature="e#4429#4601#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -473,7 +733,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="173" column="82" selection-start-line="173" selection-start-column="82" selection-end-line="173" selection-end-column="82" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -482,8 +744,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
           <folding>
+            <element signature="e#8#111#0#PHP" expanded="false" />
             <element signature="n#curlRequest#0;n#!!top" expanded="false" />
+            <element signature="n#getOrderNo#0;n#!!top" expanded="false" />
             <element signature="n#ArrToXml#0;n#!!top" expanded="false" />
+            <element signature="n#XmlToArr#0;n#!!top" expanded="false" />
+            <element signature="n#add_salt#0;n#!!top" expanded="false" />
+            <element signature="n#newPwd#0;n#!!top" expanded="false" />
+            <element signature="n#getCode#0;n#!!top" expanded="false" />
+            <element signature="n#sendSms#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -582,13 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -614,23 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/findLawyer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1157025">
-          <caret line="524" column="7" selection-start-line="524" selection-start-column="7" selection-end-line="524" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/CenterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60991734">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,7 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,7 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.90651083">
           <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,15 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5909091">
           <caret line="677" column="42" selection-start-line="677" selection-start-column="42" selection-end-line="677" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/bill.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4023372">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3572621">
           <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,17 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery-1.8.2.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8841761">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,18 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3823065">
           <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="e#890#1108#0" expanded="false" />
-            <element signature="e#1192#1247#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/center.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54159594">
-          <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,42 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56149733">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Functions/func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-71.27273">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding>
-            <element signature="e#8#111#0#PHP" expanded="false" />
-            <element signature="n#curlRequest#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/topUp.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0227275">
-          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/LawController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.840909">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.977273">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,33 +962,128 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3073006">
           <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Functions/func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="e#8#111#0#PHP" expanded="false" />
+            <element signature="n#curlRequest#0;n#!!top" expanded="false" />
+            <element signature="n#getOrderNo#0;n#!!top" expanded="false" />
+            <element signature="n#ArrToXml#0;n#!!top" expanded="false" />
+            <element signature="n#XmlToArr#0;n#!!top" expanded="false" />
+            <element signature="n#add_salt#0;n#!!top" expanded="false" />
+            <element signature="n#newPwd#0;n#!!top" expanded="false" />
+            <element signature="n#getCode#0;n#!!top" expanded="false" />
+            <element signature="n#sendSms#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/topUp.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14141414">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/WxController.php">
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.818182">
-          <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/law_touch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/bill.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7727275">
+          <caret line="6" column="79" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.613636">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/center.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0454545">
+          <caret line="166" column="7" selection-start-line="166" selection-start-column="7" selection-end-line="166" selection-end-column="7" />
           <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-            <element signature="e#215#1966#0#PHP" expanded="false" />
-            <element signature="e#1069#1408#0#PHP" expanded="false" />
-            <element signature="e#1252#1408#0#PHP" expanded="false" />
-            <element signature="e#1437#1554#0#PHP" expanded="false" />
-            <element signature="e#1982#2304#0#PHP" expanded="false" />
-            <element signature="e#2319#2381#0#PHP" expanded="false" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3174872">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.340909">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/LawController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.9545455">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/WxController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="105.795456">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#45#73#0#PHP" expanded="true" />
+            <element signature="e#4250#4405#0#PHP" expanded="false" />
+            <element signature="e#4429#4601#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/CenterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0227275">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/findLawyer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.1188455">
+          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>

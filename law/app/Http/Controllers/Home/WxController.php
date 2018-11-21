@@ -34,6 +34,7 @@ class WxController extends Controller
                 ->insertGetId(['user_openid'=>$user_info['openid'],'user_img'=>$user_info['headimgurl']]);
         }
         $user = json_decode(json_encode(DB::table('law_user')
+            -> leftJoin('law_medal','law_user.user_id','=','law_medal.user_id')
             -> where(['user_openid'=>$user_info['openid']])
             -> first()),true);#重新查这个用户信息，用于查积分，余额等
         $session = [
@@ -43,7 +44,7 @@ class WxController extends Controller
         ];
         session(['user'=>$session]);#登录状态
         #个人中心页面
-        return view('home.center',['name'=>$user_info['nickname'],'img'=>$user['user_img'],'grade'=>$user['user_integral'],'medal'=>$user['user_medal']]);
+        return view('home.center',['name'=>$user_info['nickname'],'img'=>$user['user_img'],'grade'=>$user['user_integral'],'medal'=>$user['medal_status']]);
     }
 
     #用户账单
@@ -109,12 +110,16 @@ class WxController extends Controller
             file_put_contents('/data/wwwroot/default/weixin/test.txt','money error',FILE_APPEND);
             exit;
         }
+        //修改订单状态
         DB::table('law_order')
             ->where(['order_no'=>$arr['out_trade_no']])
             ->update(['status'=>2]);
+        //修改用户余额
         DB::table('law_user')
             ->where(['user_id'=>$order_info['user_id']])
             ->increment('user_balance',$arr['cash_fee']);
+        //用户勋章
+        $this -> _getMedal($order_info,$arr);
         file_put_contents('/data/wwwroot/default/weixin/test.txt','success',FILE_APPEND);
         $returnXml = ArrToXml(['return_code'=>'SUCCESS','return_msg'=>'OK']);
         echo  $returnXml;
@@ -132,4 +137,77 @@ class WxController extends Controller
             return false;
         }
     }
+    //计算用户勋章
+    private function _getMedal($order_info,$arr){
+        //用户勋章
+        $medal_info = json_decode(json_encode(DB::table('law_medal')
+            ->where(['user_id'=>$order_info['user_id']])
+            ->first()),true);
+        $dueTime = strtotime('+7 day');//到期时间
+        if(!$medal_info){
+            $sum = $arr['cash_fee'];//消费的金额
+            if($sum>0 && $sum<10){
+                $medal = 0;
+            }elseif($sum>=10 && $sum<20){
+                $medal = 1;
+            }elseif($sum>=20 && $sum<30){
+                $medal = 2;
+            }elseif($sum>=30 && $sum<50){
+                $medal = 3;
+            }elseif($sum>=50){
+                $medal = 4;
+            }
+            DB::table('law_medal')
+                ->insertGetId(['user_id'=>$order_info['user_id'],'medal_utime'=>time(),'due_time'=>$dueTime,'medal_status'=>$medal]);
+        }else{
+            #本次消费时间距离上次消费时间是否超过7天
+            if(time() >= $medal_info['due_time']){
+                #超过七天  根据消费情况重置勋章
+                $sum = $arr['cash_fee'];//消费的金额
+                if($sum>0 && $sum<10){
+                    $medal = 0;
+                }elseif($sum>=10 && $sum<20){
+                    $medal = 1;
+                }elseif($sum>=20 && $sum<30){
+                    $medal = 2;
+                }elseif($sum>=30 && $sum<50){
+                    $medal = 3;
+                }elseif($sum>=50){
+                    $medal = 4;
+                }
+                DB::table('law_medal')
+                    ->where(['user_id'=>$order_info['user_id']])
+                    ->update(['medal_status'=>$medal,'due_time'=>$dueTime]);
+            }else{
+                #未超过七天 根据消费情况重置勋章
+                $dueTime = 0;#到期时间
+                $medal_status = $medal_info['medal_status'];#勋章等级
+                $sum = $arr['cash_fee'];//消费的金额
+                if($sum>0 && $sum<10){
+                    $medal = 0;
+                }elseif($sum>=10 && $sum<20 && $medal_status == 1){
+                    $medal = 1;
+                    $dueTime = $medal_info['due_time'] + 60*60*24*7;
+                }elseif($sum>=20 && $sum<30  && $medal_status == 2){
+                    $medal = 2;
+                    $dueTime = $medal_info['due_time'] + 60*60*24*7;
+                }elseif($sum>=30 && $sum<50  && $medal_status == 3){
+                    $medal = 3;
+                    $dueTime = $medal_info['due_time'] + 60*60*24*7;
+                }elseif($sum>=50  && $medal_status == 4){
+                    $medal = 4;
+                    $dueTime = $medal_info['due_time'] + 60*60*24*7;
+                }
+                DB::table('law_medal')
+                    ->where(['user_id'=>$order_info['user_id']])
+                    ->update(['medal_status'=>$medal,'due_time'=>$dueTime]);
+            }
+        }
+    }
+
+
+
+
+
+
 }
