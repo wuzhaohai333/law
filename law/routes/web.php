@@ -117,6 +117,8 @@ Route::any('/cancel_user','Admin\UserController@cancelUser');
 Route::any('/user_top-up','Admin\UserController@userTopUp');
 #律师列表
 Route::any('/attorney_list','Admin\AttorneyController@attorneyList');
+#律师封号、解封
+Route::any('/attorney_stop','Admin\AttorneyController@attorneyStop');
 #律师提现记录
 Route::any('/attorney_withdraw','Admin\AttorneyController@attorneyWithdraw');
 #投稿列表
