@@ -38,17 +38,22 @@
                     <td>{{$v->contribute_utime}}</td>
                     <td>@if($v->contribute_status==1)
                             已通过
-                            @elseif($v->contribute_status==2)
-                            已驳回
-                            @elseif($v->contribute_status==3)
-                            已删除
-                            @else
+                            <button class="layui-btn layui-btn-sm layui-btn-danger no" contribute_id="{{$v->contribute_id}}" type="button">不通过</button>
+                            <button class="layui-btn layui-btn-sm layui-btn-danger delete" contribute_id="{{$v->contribute_id}}" type="button">删除</button>
 
+                        @elseif($v->contribute_status==2)
+                            已驳回
+                            <button class="layui-btn layui-btn-sm ok" contribute_id="{{$v->contribute_id}}" type="button">通过</button>
+                            <button class="layui-btn layui-btn-sm layui-btn-danger delete" contribute_id="{{$v->contribute_id}}" type="button">删除</button>
+                        @elseif($v->contribute_status==3)
+                            已删除
+                            <button class="layui-btn layui-btn-sm layui-btn-danger no_delete" contribute_id="{{$v->contribute_id}}" type="button">取消删除</button>
+                            <button class="layui-btn layui-btn-sm layui-btn-danger ok_delete" contribute_id="{{$v->contribute_id}}" type="button">直接删除</button>
+                        @else
                             <button class="layui-btn layui-btn-sm ok" contribute_id="{{$v->contribute_id}}" type="button">通过</button>
                             <button class="layui-btn layui-btn-sm layui-btn-danger no" contribute_id="{{$v->contribute_id}}" type="button">不通过</button>
 
                         @endif
-                        <button class="layui-btn layui-btn-sm layui-btn-danger delete" contribute_id="{{$v->contribute_id}}" type="button">删除</button>
 
                     </td>
                 </tr>
@@ -116,6 +121,52 @@
                         $.post('contribute_ok',{'_token':'{{csrf_token()}}',contribute_id:contribute_id,type:3},function(msg){
                             if(msg==1){
                                 layer.msg('删除成功', {
+                                    icon: 1,
+                                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                                }, function(){
+                                    //do something
+                                    location.reload();
+                                });
+                            }else{
+                                layer.msg('驳回失败请重试', {
+                                    icon: 2
+                                });
+                            }
+                        });
+                        layer.close(index);
+                    });
+                });
+                //取消投稿删除
+                $('.no_delete').click(function(){
+                    var contribute_id=$(this).attr('contribute_id');
+                    layer.confirm('确定将该稿子取消删除？', {icon: 3, title:'提示'}, function(index){
+                        //do something
+                        $.post('contribute_ok',{'_token':'{{csrf_token()}}',contribute_id:contribute_id,type:4},function(msg){
+                            if(msg==1){
+                                layer.msg('取消删除成功', {
+                                    icon: 1,
+                                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                                }, function(){
+                                    //do something
+                                    location.reload();
+                                });
+                            }else{
+                                layer.msg('驳回失败请重试', {
+                                    icon: 2
+                                });
+                            }
+                        });
+                        layer.close(index);
+                    });
+                });
+                //取消投稿删除
+                $('.ok_delete').click(function(){
+                    var contribute_id=$(this).attr('contribute_id');
+                    layer.confirm('确定将该稿子直接删除？', {icon: 3, title:'提示'}, function(index){
+                        //do something
+                        $.post('contribute_ok',{'_token':'{{csrf_token()}}',contribute_id:contribute_id,type:5},function(msg){
+                            if(msg==1){
+                                layer.msg('直接删除成功', {
                                     icon: 1,
                                     time: 2000 //2秒关闭（如果不配置，默认是3秒）
                                 }, function(){

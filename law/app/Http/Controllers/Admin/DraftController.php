@@ -37,8 +37,22 @@ class DraftController extends CommController
             }else{
                 echo 2;
             }
-        }else{
+        }else if($type==3){
             $res=DB::table('law_contribute')->where($where)->update(['contribute_status'=>3,'contribute_utime'=>time()]);
+            if($res){
+                echo 1;
+            }else{
+                echo 2;
+            }
+        }else if($type==4){
+            $res=DB::table('law_contribute')->where($where)->update(['contribute_status'=>0,'contribute_utime'=>time()]);
+            if($res){
+                echo 1;
+            }else{
+                echo 2;
+            }
+        }else{
+            $res=DB::table('law_contribute')->where($where)->delete();
             if($res){
                 echo 1;
             }else{
