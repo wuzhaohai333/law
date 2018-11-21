@@ -4,11 +4,43 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Input;
 class CommentController extends CommController
 {
     //评论列表
     public function commentList(){
-        return view('admin.commentList',['title'=>'评论列表']);
+        $data=DB::table('law_comment')->where('comment_status','<',3)->simplePaginate(2);
+        foreach($data as $k=>$v){
+            $data[$k]->comment_ctime=date('Y-m-d H:i:s',$v->comment_ctime);
+            if(!empty($v->comment_utime)){
+                $data[$k]->comment_utime=date('Y-m-d H:i:s',$v->comment_utime);
+            }
+        }
+        return view('admin.commentList',['title'=>'评论列表','data'=>$data]);
+    }
+    //选取删除 标杆用户
+    public function commentSightcing(){
+        $type=Input::get('type');
+        $comment_id=Input::get('comment_id');
+        $where=[
+            'comment_id'=>$comment_id
+        ];
+        if($type==1){
+            DB::table('law_comment')->where(['is_sightcing'=>1])->update(['is_sightcing'=>0]);
+            $res=DB::table('law_comment')->where($where)->update(['is_sightcing'=>1]);
+            if($res){
+                echo 1;
+            }else{
+                echo 2;
+            }
+        }else{
+            $res=DB::table('law_comment')->where(['is_sightcing'=>1])->update(['is_sightcing'=>0]);
+            if($res){
+                echo 1;
+            }else{
+                echo 2;
+            }
+        }
     }
 }
