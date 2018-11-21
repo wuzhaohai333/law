@@ -126,6 +126,8 @@ Route::any('/attorney_stop','Admin\AttorneyController@attorneyStop');
 Route::any('/attorney_withdraw','Admin\AttorneyController@attorneyWithdraw');
 #投稿列表
 Route::any('/draft_list','Admin\DraftController@draftList');
+#投稿通过
+Route::any('/contribute_ok','Admin\DraftController@contributeOk');
 #评论列表
 Route::any('/comment_list','Admin\CommentController@commentList');
 #标杆用户

@@ -1,6 +1,5 @@
 @include('admin.layouts.top')
 <div class="layui-body">
-    <div style="padding: 15px;">投稿列表</div>
     <div style="padding: 15px;">
         <table class="layui-table">
             <colgroup>
@@ -37,20 +36,101 @@
                     </td>
                     <td>{{$v->contribute_ctime}}</td>
                     <td>{{$v->contribute_utime}}</td>
-                    <td>
-                        <button class="layui-btn layui-btn-sm cancel" contribute_id="{{$v->contribute_id}}" type="button">通过</button>
-                        <button class="layui-btn layui-btn-sm layui-btn-danger block" contribute_id="{{$v->contribute_id}}" type="button">不通过</button>
-                        <button class="layui-btn layui-btn-sm layui-btn-danger block" contribute_id="{{$v->contribute_id}}" type="button">删除</button>
+                    <td>@if($v->contribute_status==1)
+                            已通过
+                            @elseif($v->contribute_status==2)
+                            已驳回
+                            @elseif($v->contribute_status==3)
+                            已删除
+                            @else
+
+                            <button class="layui-btn layui-btn-sm ok" contribute_id="{{$v->contribute_id}}" type="button">通过</button>
+                            <button class="layui-btn layui-btn-sm layui-btn-danger no" contribute_id="{{$v->contribute_id}}" type="button">不通过</button>
+
+                        @endif
+                        <button class="layui-btn layui-btn-sm layui-btn-danger delete" contribute_id="{{$v->contribute_id}}" type="button">删除</button>
+
                     </td>
                 </tr>
             @endforeach
             </tbody>
         </table>
-
         <script src="js/js.js"></script>
         <script>
             $(function(){
+                layui.use('layer', function(){
+                    var layer = layui.layer;
+                });
                 $('#a').find('li').addClass('a');
+                //审核通过
+                $('.ok').click(function(){
+                    var contribute_id=$(this).attr('contribute_id');
+                    layer.confirm('确定将该稿子通过？', {icon: 3, title:'提示'}, function(index){
+                        //do something
+                        $.post('contribute_ok',{'_token':'{{csrf_token()}}',contribute_id:contribute_id,type:1},function(msg){
+                            if(msg==1){
+                                layer.msg('通过成功', {
+                                    icon: 1,
+                                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                                }, function(){
+                                    //do something
+                                    location.reload();
+                                });
+                            }else{
+                                layer.msg('通过失败请重试', {
+                                    icon: 2
+                                });
+                            }
+                        });
+                        layer.close(index);
+                    });
+                });
+                //审核驳回
+                $('.no').click(function(){
+                    var contribute_id=$(this).attr('contribute_id');
+                    layer.confirm('确定将该稿子驳回？', {icon: 3, title:'提示'}, function(index){
+                        //do something
+                        $.post('contribute_ok',{'_token':'{{csrf_token()}}',contribute_id:contribute_id,type:2},function(msg){
+                            if(msg==1){
+                                layer.msg('驳回成功', {
+                                    icon: 1,
+                                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                                }, function(){
+                                    //do something
+                                    location.reload();
+                                });
+                            }else{
+                                layer.msg('驳回失败请重试', {
+                                    icon: 2
+                                });
+                            }
+                        });
+                        layer.close(index);
+                    });
+                });
+                //投稿删除
+                $('.delete').click(function(){
+                    var contribute_id=$(this).attr('contribute_id');
+                    layer.confirm('确定将该稿子删除？', {icon: 3, title:'提示'}, function(index){
+                        //do something
+                        $.post('contribute_ok',{'_token':'{{csrf_token()}}',contribute_id:contribute_id,type:3},function(msg){
+                            if(msg==1){
+                                layer.msg('删除成功', {
+                                    icon: 1,
+                                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                                }, function(){
+                                    //do something
+                                    location.reload();
+                                });
+                            }else{
+                                layer.msg('驳回失败请重试', {
+                                    icon: 2
+                                });
+                            }
+                        });
+                        layer.close(index);
+                    });
+                });
             });
 
         </script>
