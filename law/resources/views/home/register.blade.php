@@ -117,6 +117,7 @@
                     <a href="lawyer_login" class="sign login-in">马上登录</a>
                 </div>
             </div>
+            <div style="margin-bottom:30px;"></div>
         </div>
         <input name="reg_type" value="1" type="hidden"> <input type="hidden" name="from" value="wap"/>
     </form>

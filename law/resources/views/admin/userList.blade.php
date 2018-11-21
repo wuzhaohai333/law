@@ -27,7 +27,7 @@
                 <td>{{$v->user_id}}</td>
                 <td>{{$v->user_integral}}</td>
                 <td>{{$v->user_balance}}</td>
-                <td><img src="https://img02.sogoucdn.com/app/a/100520093/8b06de47d2b490bd-bf83d09b09323b0a-14d813da333d7f359f36e2d7fbb8715c.jpg"/></td>
+                <td><img width="50px" height="50px" src="https://img02.sogoucdn.com/app/a/100520093/8b06de47d2b490bd-bf83d09b09323b0a-14d813da333d7f359f36e2d7fbb8715c.jpg"/></td>
                 <td>@if($v->user_medal==0)
                         没有
                         @elseif($v->user_medal==1)

@@ -55,6 +55,10 @@ Route::any('/verify_code','Home\RegisterController@verify_code');
 #律师注册 添加
 Route::any('/lawyer_add','Home\RegisterController@lawyer_add');
 
+#律师个人中心
+Route::any('/law_center','Home\CenterController@law_center');
+
+
 
 
 
@@ -116,6 +120,8 @@ Route::any('/cancel_user','Admin\UserController@cancelUser');
 Route::any('/user_top-up','Admin\UserController@userTopUp');
 #律师列表
 Route::any('/attorney_list','Admin\AttorneyController@attorneyList');
+#律师封号、解封
+Route::any('/attorney_stop','Admin\AttorneyController@attorneyStop');
 #律师提现记录
 Route::any('/attorney_withdraw','Admin\AttorneyController@attorneyWithdraw');
 #投稿列表
@@ -126,8 +132,12 @@ Route::any('/comment_list','Admin\CommentController@commentList');
 Route::any('/classify_add','Admin\ClassifyController@classifyAdd');
 #分类添加
 Route::any('/classify_add_do','Admin\ClassifyController@classifyAddDo');
+#分类修改
+Route::any('/classify_up_do','Admin\ClassifyController@classifyUpDo');
 #分类列表
 Route::any('/classify_list','Admin\ClassifyController@classifyList');
+#分类列表
+Route::any('/delete_class','Admin\ClassifyController@deleteClass');
 #管理员添加
 Route::any('/admin_add','Admin\AdminController@adminAdd');
 #管理员添加

@@ -117,11 +117,11 @@ class RegisterController extends Controller
                 DB::table('law_attorney')
                     ->where(['attorney_phone'=>$data['mobilep']])
                     ->first()),true);
-            $request->session()->put('lawyer_info',
-                [
-                     'attorney_id'=>$law_info['attorney_id'],
-                     'attorney_name'=>$law_info['attorney_name']
-                ]);
+            $session = [
+                'attorney_id'=>$law_info['attorney_id'],
+                'attorney_name'=>$law_info['attorney_name']
+            ];
+            $request->session()->put('lawyer_info',$session);
             header("location:http://www.law.com/index");
         }else{
             header("location:http://www.law/com/register");
