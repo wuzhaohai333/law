@@ -134,10 +134,16 @@ Route::any('/attorney_stop','Admin\AttorneyController@attorneyStop');
 Route::any('/attorney_withdraw','Admin\AttorneyController@attorneyWithdraw');
 #投稿列表
 Route::any('/draft_list','Admin\DraftController@draftList');
+#投稿通过
+Route::any('/contribute_ok','Admin\DraftController@contributeOk');
 #评论列表
 Route::any('/comment_list','Admin\CommentController@commentList');
 #标杆用户
 Route::any('/comment_sightcing','Admin\CommentController@commentSightcing');
+#幸运用户
+Route::any('/comment_good','Admin\CommentController@commentGood');
+#删除评论
+Route::any('/comment_delete','Admin\CommentController@commentDelete');
 #分类添加
 Route::any('/classify_add','Admin\ClassifyController@classifyAdd');
 #分类添加
