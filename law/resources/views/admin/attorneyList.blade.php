@@ -1,4 +1,9 @@
 @include('admin.layouts.top')
+@if(session('admin_info.admin_name')=='')
+    <script>
+        location.href='admin';
+    </script>
+@endif
 <div class="layui-body">
     <!-- 内容主体区域 -->
     <div style="padding: 15px;">
@@ -94,7 +99,7 @@
                                     location.reload();
                                 });
                             }else{
-                                layer.msg('封号失败请重试', {
+                                layer.msg('解封失败请重试', {
                                     icon: 2
                                 });
                             }
