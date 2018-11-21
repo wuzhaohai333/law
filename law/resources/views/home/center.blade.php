@@ -167,7 +167,7 @@
 <aside>
     <ul>
         <li><a href="/index" class="sp1"><i class="iconfont">&#xe60b;</i>首页<i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>
-        <li style="margin-top: .2rem;"><a href="javscript:;" class="sp2"><i class="iconfont">&#xe617;</i>找律师<i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>
+        <li style="margin-top: .2rem;"><a href="/findLawyer" class="sp2"><i class="iconfont">&#xe617;</i>找律师<i class="iconfont" style="float: right;font-size: .3rem;">&#xe602;</i></a></li>
         <li style="margin-top: .2rem;"><a href="javscript:;" class="sp3">
                 <i class="iconfont">&#xe717;</i>我的勋章:@if($medal == 0)
                             普通用户
