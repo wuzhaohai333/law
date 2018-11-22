@@ -56,8 +56,16 @@ Route::any('/verify_code','Home\RegisterController@verify_code');
 Route::any('/lawyer_add','Home\RegisterController@lawyer_add');
 
 #律师个人中心
-Route::any('/law_center','Home\CenterController@law_center');
+Route::any('/law_center','Home\LawCenterController@law_center');
 
+#钱包页面
+Route::any('/law_default','Home\LawCenterController@law_default');
+
+#提现的类型
+Route::any('/withdraw_type/{id}','Home\LawCenterController@withdraw_type');
+
+#提现
+Route::any('/withdraw_deposit','Home\LawCenterController@withdraw_deposit');
 
 
 

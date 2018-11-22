@@ -231,7 +231,7 @@
             $(o).text("正在发送...");
             isget = true;
             $.ajax({
-                url: "phone_code",
+                url: "/phone_code",
                 type: 'post',
                 dataType: 'json',
                 data: {'_token':'{{csrf_token()}}',mobile: mobile},

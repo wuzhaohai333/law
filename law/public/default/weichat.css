@@ -1,4 +1,4 @@
-﻿@charset"utf-8";
+@charset"utf-8";
 	html{
 		background: #f0eff5;
 	}
@@ -164,6 +164,14 @@
   		outline: none;
   		margin-top: 1em;
   	}
+	.out1{
+		width: 90%;
+		height: 2.6em;
+		border:1px solid #ccc;
+		border-radius: 2px;
+		outline: none;
+		margin-top: 1em;
+	}
   	.out{
   		width: 90%;
   		height: 2.6em;
