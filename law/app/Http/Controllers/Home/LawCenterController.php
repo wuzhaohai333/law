@@ -45,7 +45,7 @@ class LawCenterController extends Controller{
         }elseif($money_data['type'] == 3) {
             $row = $this->_withdraw_aliPay($money, $law_id);
         }else{
-            $row =  ['font'=>'类型错误','icon'=>2];
+            $row =  ['font'=>'类型错误','code'=>2];
         }
         return $row;
     }
@@ -66,11 +66,11 @@ class LawCenterController extends Controller{
                 ->select('attorney_balance','attorney_openid')
                 ->first()),true);
         if(empty($attorney_info)) {
-            return ['font' => '账号状态错误,请联系客服', 'icon' => 2];
+            return ['font' => '账号状态错误,请重新登录', 'code' => 2];
         }
         #核对余额是否满足提款金额
         if($money > $attorney_info['attorney_balance']){
-            return ['font'=>'余额不足','icon'=>2];
+            return ['font'=>'余额不足','code'=>2];
         }
         #订单入库
         $insert = [
@@ -82,11 +82,62 @@ class LawCenterController extends Controller{
         ];
         $res = DB::table('law_withdraw')->insertGetId($insert);
         if($res){
-
+            $post_url = "https://api.mch.weixin.qq.com/mmpaymkttransfers/promotion/transfers";
+            $key = "sdg634fghgu5654rtghfghgfy4575htg";
+            $arr = [
+                'mch_appid'=>'wx3d751ea7a2f7c064',
+                'mchid'=>'1499304962',
+                'nonce_str'=>uniqid(),
+                //'sign'=>'',
+                'partner_trade_no'=>$order_on,
+                'openid'=>$attorney_info['attorney_openid'],
+                'check_name'=>'NO_CHECK',
+                'amount'=>$money*100,    //单位为分需要乘100
+                'desc'=>'测试提现',
+                'spbill_create_ip'=>$_SERVER['SERVER_ADDR'],
+            ];
+            ksort($arr);
+            $string1 = urldecode(http_build_query($arr)).'&key='.$key;
+            $sign = strtoupper(md5($string1));
+            $arr['sign'] = $sign;
+            $xml = ArrToXml($arr);
+            $xml_return = postData($post_url,$xml);
+            $array = XmlToArr($xml_return);
+            file_put_contents('D:/phpStudy1/PHPTutorial/WWW/law/text.txt',print_r($array,true),FILE_APPEND);
+            #如果提现成功，把数据库数据补全
+            //print_r($array);
+            if($array['return_code'] == 'SUCCESS'){
+                if($array['return_msg'] == '支付失败'){
+                    return ['font'=>'提现失败','code'=>2];
+                }
+                if($array['result_code'] == 'SUCCESS'){
+                    #条件等于 微信提现 提现表的自增id
+                    $withdraw_where = [
+                        'withdraw_status'=>1,
+                        'withdraw_id'=>$res
+                    ];
+                    #修改
+                    $seav = [
+                        'payment_time'=>strtotime($array['payment_time']),
+                        'payment_no'=>$array['payment_no'],
+                        'status'=>1
+                    ];
+                    $row = DB::table('law_withdraw')->where($withdraw_where)->update($seav);
+                    #如果修改成功，把律师表里的余额减去对应的提现金额
+                    if($row){
+                        $new_money = $attorney_info['attorney_balance'] - $money;
+                        $str = DB::table('law_attorney')->where($where)->update(['attorney_balance'=>$new_money]);
+                        if($str){
+                            return ['font'=>'提现成功','code'=>'1'];
+                        }else{
+                            return ['font'=>'金额修改失败','code'=>'1'];
+                        }
+                    }else{
+                        return ['font'=>'没有修改成功','code'=>2];
+                    }
+                }
+            }
         }
-        print_r($res);
-
-
     }
     /**
      * 提现到银行卡

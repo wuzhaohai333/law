@@ -79,6 +79,30 @@ function getCode(){
     return rand(1111,9999);
 }
 
+function postData($url,$postfields){
+    $ch = curl_init();
+    $params[CURLOPT_URL] = $url;    //请求url地址
+    $params[CURLOPT_HEADER] = false; //是否返回响应头信息
+    $params[CURLOPT_RETURNTRANSFER] = true; //是否将结果返回
+    $params[CURLOPT_FOLLOWLOCATION] = true; //是否重定向
+    $params[CURLOPT_POST] = true;
+    $params[CURLOPT_POSTFIELDS] = $postfields;
+    $params[CURLOPT_SSL_VERIFYPEER] = false;
+    $params[CURLOPT_SSL_VERIFYHOST] = false;
+    //以下是证书相关代码
+    $params[CURLOPT_SSLCERTTYPE] = 'PEM';
+    $params[CURLOPT_SSLCERT] = 'D:/phpStudy1/PHPTutorial/WWW/law/law/apiclient_cert.pem';
+    $params[CURLOPT_SSLKEYTYPE] = 'PEM';
+    $params[CURLOPT_SSLKEY] = 'D:/phpStudy1/PHPTutorial/WWW/law/law/apiclient_key.pem';
+    curl_setopt_array($ch, $params); //传入curl参数
+    $content = curl_exec($ch); //执行
+    curl_close($ch); //关闭连接
+    return $content;
+}
+
+
+
+
 /*
 * 此文件用于验证短信服务API接口，供开发时参考
 * 执行验证前请确保文件为utf-8编码，并替换相应参数为您自己的信息，并取消相关调用的注释

@@ -70,7 +70,7 @@
             type:'post',
             dataType:'json',
             success: function (json) {
-                layer.msg(json);
+                layer.msg(json.font,{icon:json.code});
             }
         })
     });
@@ -102,7 +102,7 @@
                 var sxf=paroGetMoneys*0.001;
                 var sjdz=paroGetMoneys-sxf;
                 //oGetMoneys.value=sjdz.toFixed(2);
-                oKyye.innerHTML="额外扣除￥"+sxf.toFixed(2)+"手续费（费率0.1%）";
+                //oKyye.innerHTML="额外扣除￥"+sxf.toFixed(2)+"手续费（费率0.1%）";
                 oGetOut.style.opacity=1;
                 //这里就可以进行与后台交互的操作比如ajax操作等。
             }
