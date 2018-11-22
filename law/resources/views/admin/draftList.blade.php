@@ -34,8 +34,8 @@
                             删除
                         @endif
                     </td>
-                    <td>{{$v->contribute_ctime}}</td>
-                    <td>{{$v->contribute_utime}}</td>
+                    <td><?php echo date('Y-m-d H:i:s',$v->contribute_ctime);?></td>
+                    <td><?php echo date('Y-m-d H:i:s',$v->contribute_utime);?></td>
                     <td>@if($v->contribute_status==1)
                             已通过
                             <button class="layui-btn layui-btn-sm layui-btn-danger no" contribute_id="{{$v->contribute_id}}" type="button">不通过</button>

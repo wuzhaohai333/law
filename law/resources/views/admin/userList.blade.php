@@ -33,15 +33,15 @@
                 <td>{{$v->user_integral}}</td>
                 <td>{{$v->user_balance}}</td>
                 <td><img width="50px" height="50px" src="https://img02.sogoucdn.com/app/a/100520093/8b06de47d2b490bd-bf83d09b09323b0a-14d813da333d7f359f36e2d7fbb8715c.jpg"/></td>
-                <td>@if($v->user_medal==0)
+                <td>@if($v->medal_status==0)
                         没有
-                        @elseif($v->user_medal==1)
+                        @elseif($v->medal_status==1)
                         铜
-                    @elseif($v->user_medal==2)
+                    @elseif($v->medal_status==2)
                         银
-                    @elseif($v->user_medal==3)
+                    @elseif($v->medal_status==3)
                         金
-                    @elseif($v->user_medal==4)
+                    @elseif($v->medal_status==4)
                         钻
                         @endif
                     勋章
