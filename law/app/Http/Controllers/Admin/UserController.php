@@ -13,14 +13,24 @@ class UserController extends CommController
     //用户列表
     public function userList(Request $request){
         //$data=DB::table('law_user')->get();
-        $data=DB::table('law_user')->join('law_medal','law_user.user_id','=','law_medal.user_id')->simplePaginate(3);
+        $data=DB::table('law_user')->simplePaginate(3);
         Paginator::useBootstrapThree();
 
         foreach ($data as $k=>$v) {
             $data[$k]->user_utime=date('Y-m-d H:i:s',$v->user_utime);
             $data[$k]->user_ctime=date('Y-m-d H:i:s',$v->user_ctime);
+            $where=[
+                'user_id'=>$v->user_id
+            ];
+            $arr=DB::table('law_medal')->where($where)->first();
+            if(empty($arr->medal_status)){
+                $data[$k]->medal_status=0;
+            }else{
+                $data[$k]->medal_status=$arr->medal_status;
+            }
+
         }
-        dump($data);
+        //dump($data);
         $admin_info = $request->session()->get('admin_info');
         return view('admin.userList',['admin'=>$admin_info,'title'=>'用户列表','data'=>$data]);
     }
