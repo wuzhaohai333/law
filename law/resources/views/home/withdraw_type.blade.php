@@ -71,6 +71,13 @@
             dataType:'json',
             success: function (json) {
                 layer.msg(json.font,{icon:json.code});
+                var payment_no = json.payment_no;
+                window.location.href="/withdraw_success?payment_no="+payment_no;
+                if(json.code == 1){
+                    var payment_no = json.payment_no;
+                    return false;
+                    window.location.href="withdraw_success";
+                }
             }
         })
     });

@@ -119,12 +119,11 @@ class RegisterController extends Controller
                     ->first()),true);
             $session = [
                 'attorney_id'=>$law_info['attorney_id'],
-                'attorney_name'=>$law_info['attorney_name']
             ];
             $request->session()->put('lawyer_info',$session);
-            header("location:http://www.law.com/index");
+            header("location:http://law.cjlll.com/law_center");
         }else{
-            header("location:http://www.law/com/register");
+            header("location:http://law.cjlll,com/register");
         }
     }
 }

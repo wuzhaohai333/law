@@ -10,8 +10,41 @@ class LawCenterController extends Controller{
     /**
      * 律师的个人中心
      */
-    public function law_center(){
-        return view('home.law_center');
+    public function law_return(Request $request){
+        #接受code
+        $code = $request->input('code');
+        #换取access_token
+        $wx_appid = env('WX_APPID');  #微信APPID
+        $wx_secret = env('WX_SECRET'); #微信密钥
+        $getToken_url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid={$wx_appid}&secret={$wx_secret}&code={$code}&grant_type=authorization_code";
+        $info = json_decode(curlRequest($getToken_url),true);
+        #换取openid  用户图像
+        $getLawinfo_url = "https://api.weixin.qq.com/sns/userinfo?access_token={$info['access_token']}&openid={$info['openid']}&lang=zh_CN";
+        $law_info = json_decode(curlRequest($getLawinfo_url),true);
+        #讲律师的信息存到数据库
+        $law_id = session('lawyer_info')['attorney_id'];
+        $where = [
+            'attorney_id'=>$law_id,
+            'attorney_openid'=>$law_info['openid']
+        ];
+        $law = json_decode(json_encode(
+            DB::table('law_attorney')
+                ->where($where)
+                ->first()),true);
+        if($law){
+            DB::table('law_attorney')
+                ->where($where)
+                ->update(['attorney_img'=>$law_info['headimgurl']]);
+        }else{
+            DB::table('law_attorney')
+                ->where(['attorney_id'=>$law_id])
+                ->update(['attorney_img'=>$law_info['headimgurl'],'attorney_openid'=>$law_info['openid']]);
+        }
+        $law_data = json_decode(json_encode(
+            DB::table('law_attorney')
+                ->where($where)
+                ->first()),true);
+        return view('home.law_center',['name'=>$law_data['attorney_may_bel'],'img'=>$law_data['attorney_img']]);
     }
     /**
      * 律师钱包页面
@@ -108,7 +141,7 @@ class LawCenterController extends Controller{
             //print_r($array);
             if($array['return_code'] == 'SUCCESS'){
                 if($array['return_msg'] == '支付失败'){
-                    return ['font'=>'提现失败','code'=>2];
+                    return ['font'=>'提现失败','code'=>2,'payment_no'=>1499304962201811220435493606];
                 }
                 if($array['result_code'] == 'SUCCESS'){
                     #条件等于 微信提现 提现表的自增id
@@ -128,7 +161,7 @@ class LawCenterController extends Controller{
                         $new_money = $attorney_info['attorney_balance'] - $money;
                         $str = DB::table('law_attorney')->where($where)->update(['attorney_balance'=>$new_money]);
                         if($str){
-                            return ['font'=>'提现成功','code'=>'1'];
+                            return ['font'=>'提现成功','code'=>'1','payment_no'=>$array['payment_no']];
                         }else{
                             return ['font'=>'金额修改失败','code'=>'1'];
                         }
@@ -162,6 +195,20 @@ class LawCenterController extends Controller{
                 ->select('attorney_balance')
                 ->first()),true);
         return $remaining_money;
+    }
+    /**
+     * 提现详情页
+     */
+    public function withdraw_success(){
+        $payment_no = Input::get();
 
+        $law_id = session('lawyer_info')['attorney_id'];
+        $where = [
+            'payment_no'=>$payment_no,
+            'status'=>1
+        ];
+        $data = DB::table('law_withdraw')->where($where)->first();
+        //print_r($data);die;
+        return view('home.withdraw_success',['data'=>$data]);
     }
 }
